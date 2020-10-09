@@ -1,0 +1,22 @@
+Användarintervju
+Alla ska fråga en-två personer fyra frågor: 
+ 
+Testanvändaren ska utföra följande moment/frågas i följande ordning.
+ 
+1  Navigation 
+Navigera till sidan där myndigheten listar sökbara jobb. 
+Du ska surfa in på myh.se och hitta listan med sökbara jobb. 
+Hur upplevde du att det gick att navigera till målet? 
+ 
+2 Design 
+Fundera över hur du upplever färg och design. 
+Klicka runt lite på hemsidan och skapa dig en uppfattning om dess design.
+Hur upplever du färg och design för denna typen av hemsida?  
+ 
+3 Struktur
+Berätta om hur du upplever strukturen på hemsidan. 
+ 
+ 
+4 Känsla
+Vad är din allmänna känsla kring webbsidan? Summera i tre ord. 
+
