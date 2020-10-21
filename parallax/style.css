@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  height: 
+}
+
+.container {
+    background-image: url("./images/parallax-image.png");
+    height: 50vh;
+
+
+}
