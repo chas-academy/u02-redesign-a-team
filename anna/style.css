@@ -1,0 +1,22 @@
+section {
+    display: grid;
+    grid-template-areas:
+    "aktuellt verksamhetsomraden"
+    "aktuellt kalender";
+}
+
+.aktuellt {
+  grid-area: aktuellt;
+
+}
+
+.verksamhetsomraden {
+    grid-area: verksamhetsomraden;
+    background-color: #B1DAD1;
+    color: #000;
+}
+
+.kalender {
+    grid-area: kalender;
+    background-color: #f9dcd3;
+}
