@@ -1,16 +1,60 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-  height: 
+html body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
 }
 
-.container {
-    background-image: url("./images/parallax-image.png");
-    height: 50vh;
+#container-parallax {
+  background-image: url("/images/parallax-image3.png");
+  background-attachment: fixed; /* This property is used to set whether a background image is fixed or scrollable.*/
+  background-position: center center;
+  background-repeat: no-repeat; /* This property is used to set whether a background image will repeat or not. */
+  background-size: cover; /* This property is used to set the size of the background image.*/
+  height: 45vh;
+  overflow: hidden;
+}
 
+#parallax-text {
+  position: relative;
+}
 
+h2 {
+  position: absolute;
+  background-color: rgba(54, 73, 102, 0.8);
+  color: white;
+  font-weight: normal;
+  font-size: 2.25em;
+  padding: 40px;
+  margin: 100px;
+}
+
+p {
+  text-align: center;
+  color: #1a3051;
+  margin: 200px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+/* MEDIA QUERY - Turn off parallax scrolling for all tablets and phones. */
+@media only screen and (max-width: 1024px) {
+  /* #container-parallax {
+    background-attachment: scroll;
+  } */
+  h2 {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h2 {
+    padding: 20px;
+    margin: 100px 20px 50px 20px;
+  }
 }
