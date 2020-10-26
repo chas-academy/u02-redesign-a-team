@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    perspective: 4px; /* The depth  */
+    overflow-x: hidden; /* Everything that goes outside will be hidden */
+    overflow-y: scroll; /* Make the container able to scroll up and down */ 
+}
+/* Extra text to test the scrolling */ 
+header h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+/* Extra paragraph to test the scrolling */ 
+header p {
+    text-align: center;
+    margin: 100px;
+    font-size: 18px;
+}
+
+/* PARALLAX */ 
+#parallax-container {
+    position: relative; 
+}
+
+#parallax {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d; /* This transform-style, sets children of this element to be positioned in the 3D space */
+
+}
+/* This pseudo selector inserts this styling before the content of the id=parallax. Styles the image seperate from the text  */
+#parallax::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url('/images/parallax-image.png');
+    background-size: cover; 
+    filter: brightness(0.5);
+    z-index: 0; 
+    transform: translateZ(-4px) scale(2); /* Positions the image on the z-axis -4px away from the viewer + scales it  */ 
+}
+
+#parallax div {
+    position: absolute;
+    top: 60%;
+    padding: 40px;
+    background-color: rgba(54, 73, 102, 0.8);
+    transform: translateZ(-2px) scale(1.5); 
+    z-index: 1; 
+}
+
+#parallax h2 {
+    font-size: 36px;
+    font-weight: normal;
+    color: white
+}
+/* This section scrolls over the parallax */ 
+section {
+    width: 100%;
+    background: white;
+    position: relative;
+    z-index: 2; 
+}
+
+/* Extra text to test the parallax */ 
+.container-text {
+    margin: auto; /* To center the text horizontally */
+    max-width: 1000px; /* Limiting the width for extra large screens */
+    padding: 80px 40px;
+}
+
+/* Extra text to test the parallax */
+.container-text p {
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/* MEDIA QUERY - Turn off parallax scrolling for all tablets and phones. */
+@media only screen and (max-device-width: 1024px) {
+  #container-parallax {
+    background-attachment: scroll;
+  }
+}
