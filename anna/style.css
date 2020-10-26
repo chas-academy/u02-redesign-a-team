@@ -10,6 +10,8 @@ section {
     grid-template-areas:
     "aktuellt verksamhetsomraden"
     "aktuellt kalender";
+    grid-gap: 39px 94px; /* (1920-(1026 + 611))/3=94 535-208-291=36 */
+    padding: 94px;
     grid-gap: 20px 20px;
     padding: 20px;
 }
@@ -17,6 +19,16 @@ section {
 .aktuellt {
     grid-area: aktuellt;
     background-image: url("img/aktuellt.png");
+    width: 1026px;
+    height: 535px;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 36px;
+    position: absolute;
+    top: 120px;
+    left: 130px;
     height: 300px;
     background-size: cover;
     grid-column: 1/3;
@@ -37,6 +49,11 @@ h1 {
 
 .text-block {
     position: absolute;
+    top: 385px; /* Padding = 94 top, så (94+535)-(208+36)=385 */
+    left: 130px; 
+    background-color: rgba(54, 73, 102, 0.5);
+    width: 954px; /* 130(left 130)-94(=padding)=36px på varje sida om text-block */
+    height: 208px;
     top: 200px;
     left: 30px;
     background-color: rgba(54, 73, 102, 0.5);
@@ -57,6 +74,15 @@ p {
     text-decoration: underline;
 }
 
+.aktuellt h2 {
+    font-size: 36px;
+    padding: 29px 29px 0px 29px;
+}
+
+.aktuellt p {
+    font-size: 24px;
+    padding: 10px 29px 29px 29px;
+
 h2 {
     font-size: 16px;
     color: #000;
@@ -68,6 +94,23 @@ h2 {
     grid-area: verksamhetsomraden;
     background-color: #B1DAD1;
     color: #000;
+    width: 611px;
+    height: 208px;
+}
+
+.verksamhetsomraden h2 {
+    position: absolute;
+    font-size: 36px;
+    position: absolute;
+    top: 120px;
+    left: 1250px;
+}
+.verksamhetsomraden p {
+    position: absolute;
+    font-size: 24px;
+    top: 170px;
+    left: 1250px;
+    width: 580px;
     grid-column: 3/4;
     grid-row: 1/6;
     position: relative;
@@ -90,6 +133,46 @@ h2 {
 .kalender {
     grid-area: kalender;
     background-color: #f9dcd3;
+    height: 291px;
+    width: 611px;
+    color: #000;
+}
+
+.kalender h2 {
+    position: absolute;
+    font-size: 36px;
+    position: absolute;
+    top: 366px;
+    left: 1250px;
+    width: 580px;
+}
+
+.kalender a {
+    color: #000;
+    text-decoration: none;
+}
+
+.kalender a:hover{
+    text-decoration: underline;
+}
+
+.flex {
+    display: inline-flex;
+    position: absolute;
+    padding: 20px 10px 10px 0px;
+    top: 416px;
+    left: 1250px;
+    width: 580px;
+}
+
+.date {
+font-size: 50px;
+text-align: center;
+}
+
+.info{
+justify-content: left;
+font-size: 24px;
     grid-column: 3/4;
     grid-row: 6/14;
 }
