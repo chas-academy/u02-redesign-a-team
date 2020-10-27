@@ -401,7 +401,7 @@ header {
   bottom: 0;
 }
 
-h2 {
+.parallax-text__h2 {
   color: white;
   font-weight: normal;
   font-size: 2.25em;
