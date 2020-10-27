@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Myndigheten för yrkeshögskolan</title>
+    <!--Links to fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--Links to icons-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!--Links to stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <!-- Logga och Meny = START -->
+        <header class="nav">
+            <a href="#">
+                <img src="img/myh_logo.png" class="logoimg" alt="Myndigheten för yrkeshögskolan" />
+            </a>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">
+                <i class="fas fa-ellipsis-v menu-icon"></i>
+            </label>
+            <nav class="main-menu" aria-label="Huvudmeny">
+                <ul role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="#">Om Oss</a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="#">Tjänster</a>
+                    </li>
+                    <li class="seperator" role="none">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="#">Kontakta Oss</a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="#">Mina Sidor</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Logga och Meny = SLUT -->
+        <section class="search-header">
+            <input type="search" value="" placeholder="Sök på myh.se" class="search-field" name="query" id="query">
+            <button id="search" class="search-btn" type="Submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </section>
+        <section class="search-menu">
+            <ul>
+                <li>
+                    <a href="#">Om Oss</a>
+                </li>
+                <li>
+                    <a href="#">Tjänster</a>
+                </li>
+                <li>
+                    <a href="#">Kontakta Oss</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sökheader = START -->
+
+
+
+        <section class="wrapper">
+            <article class="inner">
+                <div class="col1">
+                    <div class="header-title">
+                        <h1><a href="#">Aktuellt</a></h1>
+                    </div>
+                    <div class="textblock">
+                        <h2><a href="#">Frågor och svar för utbildningsledare med anledning av coronaviruset.</a></h2>
+                        <p>Här svarar myndigheten löpande på frågor som kommer in från utbildningssamordnare med
+                            anledning av coronaviruset</p>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="verksamhetsomraden">
+                        <h2><a href="#">Verksamhetsområden</a></h2>
+                        <p>Myndigheten för yrkeshögskolan har i uppdrag att ansvara för frågor som rör utbildningar inom
+                            yrkeshögskolan. <a href="#">Läs mer om kalenderhändelser här.</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="inner-date">
+                        <div class="header-date">
+                            <h2><a href="#">Kalender 2021</a></h2>
+                        </div>
+                        <div class="date">
+                            <p class="date"><strong>29</strong><br>okt</p>
+                        </div>
+                        <div class="date-text">
+                            <p>Webbinarium: Metodik för distansundervisning - så här klarar du det (och lite till!).
+                                <br><a href="#">Läs mer om kalenderhändelser här.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
