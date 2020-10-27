@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  width: 100%;
+}
+
+.about {
+  grid-area: about;
+}
+
+.links {
+  grid-area: links;
+}
+
+.areas {
+  grid-area: areas;
+}
+
+.news {
+  grid-area: news;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+footer {
+  background-color: #1a3051;
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+footer > section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "about links contact"
+    "areas news contact";
+  width: 100%;
+}
+
+footer > section > article {
+  font-family: Roboto;
+  color: white;
+  padding: 20px;
+}
+
+footer > section > article > ul {
+  list-style: none;
+}
