@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>      
+    <header>
+    <ul>
+        <div class="container">
+        <input type="text" class="search" name="sök" placeholder="Search...">
+<input type="submit" name="submit" class="Sök" value="Sök">
+        <div class="box1"1><a href="/bbox"><span class="link">För studievägledare</span></a></div>
+        <div class="box2"2><a href="/bbox"><span class="link">För företagare</span></a></div>
+        <div class="box3"3><a href="/bbox"><span class="link">För studerande</span></a></div>
+
+    </ul>
+</div>
+  </header>
+
+        </body>
+</html>

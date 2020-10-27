@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.max-width {
+  max-width: 1290px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.boxes .boxes__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  position: left;
+}
+
+.left-column__kalender,
+.left-column__extra {
+  margin-top: 20px;
+}
+
+.left-column__verksamhet {
+  background-color: #b1dad1;
+  color: black;
+  height: 150px;
+  width: 300px;
+}
+
+.left-column__verksamhet__title,
+.left-column__kalender__title,
+.left-column__extra__title {
+  font-size: 18px;
+  position: relative;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.left-column__kalender__heading__month,
+aktuellt__article-one__title,
+aktuellt__article-two__title,
+aktuellt__article-three__title {
+  font-size: 16px;
+}
+
+.left-column__kalender {
+  background-color: #f9dcd3;
+  color: black;
+  height: 150px;
+  width: 300px;
+}
+
+.left-column__kalender__heading__date {
+  font-size: 36px;
+  padding: 0 20px;
+}
+
+.left-column__kalender__text__p {
+  position: relative;
+  top: -60px;
+  width: 225px;
+  margin-left: 75px;
+}
+
+p {
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.left-column__kalender__heading__month,
+.left-column__kalender__text__p,
+.left-column__extra__text,
+.aktuellt__article-one__content__text,
+.aktuellt__article-two__content__text,
+.aktuellt__article-three__content__text {
+  font-size: 14px;
+  padding: 0px 10px 10px;
+}
+.aktuellt__article__content__date {
+  padding-right: 10px;
+  color: #696969;
+}
+
+.left-column__extra {
+  background-color: #364966;
+  color: white;
+  height: 150px;
+  width: 300px;
+}
+
+.left-column__verksamhet__text,
+.left-column__kalender__heading__month,
+.left-column__kalender__text__p,
+.left-column__extra__text {
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+.aktuellt {
+  display: flex;
+  flex-direction: column;
+  height: 490px;
+  width: 910px;
+  padding-left: 20px;
+}
+
+.aktuellt__title {
+  font-size: 18px;
+  position: relative;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.aktuellt img {
+  width: 180px;
+}
+
+.aktuellt__article-one,
+.aktuellt__article-two,
+.aktuellt__article-three {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.aktuellt__article-two
+  .aktuellt__article-two__title
+  .aktuellt__article-two__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.aktuellt__article-one__img,
+.aktuellt__article-two__img,
+.aktuellt__article-three__img {
+  width: 180px;
+  height: 114px;
+}
+
+.aktuellt__article-one__title,
+.aktuellt__article-two__title,
+.aktuellt__article-three__title {
+  font-size: 16px;
+  padding: 0 10px 10px;
+}

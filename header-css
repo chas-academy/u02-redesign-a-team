@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: white;
+
+}
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container{
+    background-color: #1A3051;
+    width: 1240px;
+    padding: 20px;
+    height: 100px;
+}
+.search{
+    width: 1000px;
+    position: fixed;
+    height: 30px;
+    right: 195px;
+}
+.Sök{
+    position: fixed;
+   width: 100px; 
+   height: 35px;
+   padding: 1px;
+   font-size: 11px;
+   background-color:#364966;
+   color: white;
+   right: 93px;
+}
+.link{
+    color: white;
+}
+.box1{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 300px ;
+    height: 50px ;
+    margin: 50px ;
+    background:#364966;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: red;
+    }
+
+.box2{
+    position: absolute;
+    top: 20px;
+    left: 450px;
+    width: 300px ;
+    height: 50px ;
+    margin: 50px ;
+    background:#364966;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    
+}
+.box3{
+    position: absolute;
+    top: 20px;
+    left: 850px;
+    width: 300px ;
+    height: 50px ;
+    margin: 50px ;
+    background:#364966;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.bbox ul a{
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width:1300px) {
+    .container{
+        width: 100%;
+    } 
+    .box3{
+        width: 25%;
+        left: 64%;
+    }
+    .box2{
+        width: 25%;
+        left: 32%;
+    }
+    .box1{
+        width: 25%;
+        left: -1%;
+
+    }
+    .link{
+        font-size: 15px;
+    }
+    .search{
+        width: 80%;
+        left: 2%;
+    }
+    .Sök{
+        width: 10%;
+right: 10%;    }
+
+}
+@media screen and (max-width: 620px){
+    .box1{
+width: 20%;
+left: -5%;
+    }
+    .box2{width: 20%;
+        left: 28%;
+
+    }
+    .box3{width: 20%;
+        left: 60%;
+
+    }
+    .link{
+        font-size: 8px;
+        
+    }
+    .Sök{
+        width: 10%;
+        left: 75%;
+    }
+    .search{
+        width: 80%;
+    }
+}
