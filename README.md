@@ -62,18 +62,22 @@ Always create a new branch!
 
 ### Sprint 1
 October 13 - Meeting regarding questioner and people to interview.
+
 October 14 - Compile interview answers to create a persona.
 
 ### Sprint 2
 October 15 - Each team member is to create a first draft design for the homepage.
+
 October 16 - Compare and compile all first draft designs into a design layout.
 
 ### Sprint 3
 October 18 - Start creating a color palett and redesign the MYH logo.
+
 October 20 - Compare and finalise the layout and the design for the MYH homepage.
 
 ### Sprint 4
-October 21 - Divide the different components of the homepage  to create a layout and design excluding pictures, videos etc. 
+October 21 - Divide the different components of the homepage  to create a layout and design excluding pictures, videos etc.
+
 October 25 - Compile the different components in to the homepage and correct any errors or conflicts.
 
 ### Sprint 5
