@@ -43,7 +43,9 @@ En redesignad version av [myh.se](myh.se) som:
 
 
 ## Installation
-First clone the repository by entering the following command: (~ % git clone https://github.com/chas-academy/u02-redesign-a-team.git)
+First clone the repository by entering the following command: 
+
+(~ % git clone https://github.com/chas-academy/u02-redesign-a-team.git)
 
 ## Usage
 
@@ -84,7 +86,7 @@ October 25 - Compile the different components in to the homepage and correct any
 October 26-28 - Use the basic structure of the homepage to create the other landing pages in HTML and review any updates to the homepage. Also review accessibility.
 
 ### Sprint 6
-October 29-30 - Finalise the project and validate the HTML and CSS code. No major changes to website will be performed at this time if no major issues occur.
+October 29-30 - Finalise the project and validate the HTML and CSS code. No major changes to the website will be performed at this time if no major issues occur.
 
 ## Credits (in no specific order)
 
