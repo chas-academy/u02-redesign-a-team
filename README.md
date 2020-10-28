@@ -51,12 +51,12 @@ First clone the repository by entering the following command: (~ % git clone htt
 
 Always create a new branch!
 
-1.Create branch (~ % git checkout -b examplebranch)
-2.Check status (~ % git status) files not committed will be red
-3.Add files to be committed (~ % git add <file name> or . <for all none tracked files>
-4.Repeat step 2 to check that the files you want to commit are green
-5.Push files (~ % git push origin <branch-name>
-6.Open a pull request.
+1. Create branch (~ % git checkout -b examplebranch)
+2. Check status (~ % git status) files not committed will be red
+3. Add files to be committed (~ % git add <file name> or . <for all none tracked files>
+4. Repeat step 2 to check that the files you want to commit are green
+5. Push files (~ % git push origin <branch-name>
+6. Open a pull request.
 
 ## Roadmap - 2020
 
@@ -85,11 +85,17 @@ October 29-30 - Finalise the project and validate the HTML and CSS code. No majo
 ## Credits (in no specific order)
 
 Anna Paajarvi
+
 Björn Lövdahl
+
 Joshua Nixon
+
 Pernilla Hallgren
+
 Simon Lindelöf
+
 Nouman
+
 Khaled Ibrahim
 
 
