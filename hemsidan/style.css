@@ -213,7 +213,7 @@ header {
   overflow: hidden;
 }
 .col2 {
-  background: #B1DAD1;
+  background: #b1dad1;
   position: relative;
   color: #000;
   min-height: 100px;
@@ -235,7 +235,7 @@ header {
   color: #fff;
   text-decoration: none;
 }
-.header-title a:hover{
+.header-title a:hover {
   text-decoration: underline;
 }
 .textblock {
@@ -338,45 +338,47 @@ header {
 /* Joshua */
 
 .three-boxes {
-    background-color: #fff;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.boxone, .boxtwo, .boxthree {
-    width: 320px;
-    padding: 10px;
-    margin: 10px;
-    background-image: url(img/library.jpg);
-    background-size: 100%, 100%;
+.boxone,
+.boxtwo,
+.boxthree {
+  width: 320px;
+  padding: 10px;
+  margin: 10px;
+  background-image: url(img/library.jpg);
+  background-size: 100%, 100%;
 }
 
 .three-boxes article {
-    color: white;
-    background-color: rgba(54, 73, 102, 0.7);
-    border-radius: 5px;
+  color: white;
+  background-color: rgba(54, 73, 102, 0.7);
+  border-radius: 5px;
 }
 
 .buttonbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
 }
 
 .buttonbox button {
-    background-color: #1A3051;
-    color: white;
-    border-style: none;
-    border-radius: 25px;
+  background-color: #1a3051;
+  color: white;
+  border-style: none;
+  border-radius: 25px;
 }
 
 @media (max-width: 1080px) {
-    .three-boxes {
-        flex-flow: column wrap;
-        align-content: center;
-    }
+  .three-boxes {
+    flex-flow: column wrap;
+    align-content: center;
+  }
 }
 
 /* Pernilla */
@@ -390,7 +392,7 @@ header {
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #parallax-text {
@@ -407,9 +409,7 @@ header {
   font-size: 2.25em;
 }
 
-
 /* Nouman */
-
 
 .boxes .boxes__content {
   display: flex;
@@ -579,6 +579,7 @@ footer {
   background-color: #1a3051;
   max-width: 1290px;
   margin: 0 auto;
+  width: 100%;
 }
 
 footer > section {
@@ -588,6 +589,7 @@ footer > section {
   grid-template-areas:
     "about links contact"
     "areas news contact";
+  padding: 20px;
   width: 100%;
 }
 
@@ -597,6 +599,44 @@ footer > section > article {
   padding: 20px;
 }
 
+footer > section > article > h2 {
+  font-size: 18px;
+}
+
 footer > section > article > ul {
   list-style: none;
+  padding-top: 10px;
+}
+
+footer > section > article > ul > li {
+  padding-top: 10px;
+}
+
+@media (max-width: 1020px) {
+  footer > section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "about contact"
+      "areas contact"
+      "links news";
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  footer > section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "about"
+      "areas"
+      "links"
+      "news"
+      "contact"
+      "contact";
+    width: 100%;
+  }
 }
