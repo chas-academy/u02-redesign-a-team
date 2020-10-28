@@ -7,8 +7,7 @@
 html {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  font-size: 0.875rem;
-  color: #000000;
+  font-size: 14px;
 }
 
 body {
@@ -17,10 +16,9 @@ body {
 
 main {
   max-width: 1290px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-color: #fff;
-  width: 100%;
+  width: 100%; /* överflödig? */
 }
 
 a {
@@ -29,11 +27,10 @@ a {
 }
 
 header {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; /* överflödig? */
   padding: 14px 25px;
   background-color: #f9dcd3;
 }
@@ -43,7 +40,6 @@ header {
   padding: 0 35px;
 }
 .menu-icon {
-  font-size: 1.4em;
   color: #ffffff;
   line-height: 50px;
   padding: 12px;
@@ -129,7 +125,7 @@ header {
   list-style: none;
 }
 .search-menu ul li {
-  padding: 0px;
+  padding: 0px; /* överflödig? */
   margin: 0 10px;
   width: 100%;
 }
@@ -148,6 +144,8 @@ header {
   color: #fff;
   width: 100%;
 }
+
+/************ ANNA ************/
 
 @media (min-width: 1080px) {
   header {
@@ -231,7 +229,17 @@ header {
   color: #fff;
   min-height: 400px;
   overflow: hidden;
+  opacity: 0.8;
 }
+
+.col1:hover,
+.boxone:hover,
+.boxtwo:hover,
+.boxthree:hover,
+#container-parallax:hover {
+  opacity: 1;
+}
+
 .col2 {
   background: #b1dad1;
   position: relative;
@@ -245,6 +253,12 @@ header {
   color: #000;
   min-height: 150px;
   padding: 20px;
+}
+.verksamhetsomraden p {
+  padding-top: 20px;
+}
+.kalender-date {
+  font-size: 36px;
 }
 .header-title {
   font-size: 24px;
@@ -281,11 +295,14 @@ header {
 .kalender {
   position: relative;
 }
+.inner-date a,
 .verksamhetsomraden a {
   color: #000;
+  text-decoration: none;
 }
-.inner-date a {
-  color: #000;
+.inner-date a:hover,
+.verksamhetsomraden a:hover {
+  text-decoration: underline;
 }
 .inner {
   display: grid;
@@ -326,6 +343,7 @@ header {
   }
   .col1 {
     grid-column: 1 / span 3;
+    opacity: 1;
   }
   .col2 {
     grid-column: 1 / span 3;
@@ -368,56 +386,96 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 25px 50px 25px 50px;
 }
 
-.boxone,
-.boxtwo,
-.boxthree {
-  width: 320px;
-  padding: 10px;
-  margin: 10px;
+.box-article {
+  height: 320px;
+  width: 100%;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.box-article::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
   background-image: url(img/library.jpg);
   background-size: 100%, 100%;
+  background-size: cover;
+  filter: grayscale(0%);
+  transition: 0.3s all;
+}
+.box-article:hover:before {
+  filter: grayscale(100%);
 }
 
-.three-boxes article {
-  color: white;
+.box-article-textblock {
+  position: absolute;
+  bottom: 0;
+  margin: 20px;
+  max-width: 100%;
   background-color: rgba(54, 73, 102, 0.7);
-  border-radius: 5px;
+  padding: 13px;
+  font-weight: 700;
+}
+.linkbox {
+  width: 100%;
 }
 
-.buttonbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
+.linkbox:nth-child(1) {
+  margin-right: 10px;
+}
+.linkbox:nth-child(2) {
+  margin: 0 10px;
+}
+.linkbox:nth-child(3) {
+  margin-left: 10px;
 }
 
-.buttonbox button {
-  background-color: #1a3051;
-  color: white;
-  border-style: none;
-  border-radius: 25px;
-}
-
-@media (max-width: 1080px) {
+@media (max-width: 768px) {
+  .three-boxes {
+    padding: 10px;
+  }
   .three-boxes {
     flex-flow: column wrap;
     align-content: center;
+  }
+  .box-article-textblock {
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+    max-width: 100%;
+    background-color: rgba(54, 73, 102, 0.7);
+    padding: 13px;
+    font-weight: 700;
+  }
+  .linkbox:nth-child(1) {
+    margin: 0 0 5px 0;
+  }
+  .linkbox:nth-child(2) {
+    margin: 5px 0px;
+  }
+  .linkbox:nth-child(3) {
+    margin: 5px 0 0 0;
   }
 }
 
 /* Pernilla */
 #container-parallax {
   background-image: url("img/parallax-image3.png");
-  background-attachment: fixed; /* This property is used to set whether a background image is fixed or scrollable.*/
+  background-attachment: fixed;
   background-position: center center;
-  background-repeat: no-repeat; /* This property is used to set whether a background image will repeat or not. */
-  background-size: cover; /* This property is used to set the size of the background image.*/
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 45vh;
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
 }
 
 #parallax-text {
@@ -426,6 +484,7 @@ header {
   margin: 100px;
   padding: 40px;
   bottom: 0;
+  width: 450px;
 }
 
 .parallax-text__h2 {
@@ -434,97 +493,140 @@ header {
   font-size: 2.25em;
 }
 
-/* Nouman */
+@media (max-width: 600px) {
+  #parallax-text {
+    margin: 0 auto;
+    position: relative;
+  }
+}
 
-.boxes .boxes__content {
+@media (max-width: 1080px) {
+  #container-parallax {
+    opacity: 1;
+  }
+}
+
+/************ NOUMAN ************/
+#hvr-glow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+#hvr-glow:hover,
+#hvr-glow:focus,
+#hvr-glow:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.col1,
+.boxone,
+.boxtwo,
+.boxthree,
+#container-parallax {
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.boxes__content {
   display: flex;
-  align-items: flex-start;
+  padding: 30px 0;
+  box-sizing: content-box;
+  flex-direction: row;
+  flex-flow: row wrap;
+  max-width: 1090px;
+  margin: auto;
   justify-content: space-evenly;
 }
 
 .left-column {
-  display: flex;
-  flex-direction: column;
-  position: left;
+  flex: 1;
+  box-sizing: border-box;
+  padding-right: 20px;
 }
 
-.left-column__kalender,
-.left-column__extra {
-  margin-top: 20px;
+.left-column a {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.left-column__verksamhet {
+.left-column a:hover {
+  text-decoration: underline;
+}
+
+.left-column__pressmeddelanden {
   background-color: #b1dad1;
   color: black;
   height: 150px;
-  width: 300px;
+  width: 100%;
 }
 
-.left-column__verksamhet__title,
-.left-column__kalender__title,
-.left-column__extra__title {
+.left-column__ledigajobb,
+.left-column__epale {
+  margin-top: 20px;
+}
+
+.left-column__pressmeddelanden__title,
+.left-column__ledigajobb__title,
+.left-column__epale__title {
   font-size: 18px;
   position: relative;
   font-weight: 500;
   padding: 20px;
 }
 
-.left-column__kalender__heading__month,
-aktuellt__article-one__title,
-aktuellt__article-two__title,
-aktuellt__article-three__title {
-  font-size: 16px;
-}
-
-.left-column__kalender {
+.left-column__ledigajobb {
   background-color: #f9dcd3;
   color: black;
   height: 150px;
-  width: 300px;
+  width: 100%;
 }
 
-.left-column__kalender__heading__date {
-  font-size: 36px;
+.left-column__ledigajobb__text {
+  position: relative;
+  color: #000;
+}
+
+#p {
+  font-size: 14px;
   padding: 0 20px;
 }
 
-.left-column__kalender__text__p {
-  position: relative;
-  top: -60px;
-  width: 225px;
-  margin-left: 75px;
-}
-
-p {
-  font-size: 14px;
+.aktuellt p {
   padding: 0 10px;
 }
 
-.left-column__kalender__heading__month,
-.left-column__kalender__text__p,
-.left-column__extra__text,
+.left-column__epale a {
+  color: #ffffff;
+}
+
+.left-column__ledigajobb__text,
+.left-column__epale__text,
 .aktuellt__article-one__content__text,
 .aktuellt__article-two__content__text,
 .aktuellt__article-three__content__text {
   font-size: 14px;
-  padding: 0px 10px 10px;
-}
-.aktuellt__article__content__date {
-  padding-right: 10px;
-  color: #696969;
+  padding: 0px 10px;
 }
 
-.left-column__extra {
+.left-column__epale {
   background-color: #364966;
   color: white;
   height: 150px;
-  width: 300px;
+  width: 100%;
 }
 
-.left-column__verksamhet__text,
-.left-column__kalender__heading__month,
-.left-column__kalender__text__p,
-.left-column__extra__text {
+.left-column__pressmeddelanden__text,
+.left-column__ledigajobb__text,
+.left-column__epale__text {
   font-size: 14px;
   padding: 0 20px;
 }
@@ -532,29 +634,47 @@ p {
 .aktuellt {
   display: flex;
   flex-direction: column;
-  height: 490px;
-  width: 910px;
-  padding-left: 20px;
+  flex: 2;
 }
 
 .aktuellt__title {
   font-size: 18px;
   position: relative;
   font-weight: 500;
-  padding: 10px 0;
+  padding: 10px 0 20px;
 }
 
 .aktuellt img {
   width: 180px;
+  filter: brightness(100%);
+  transition: filter 0.3s ease;
+}
+
+.aktuellt img:hover {
+  filter: brightness(50%);
+}
+
+.aktuellt a {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.aktuellt a:hover {
+  text-decoration: underline;
 }
 
 .aktuellt__article-one,
 .aktuellt__article-two,
 .aktuellt__article-three {
-  width: 800px;
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+}
+
+.aktuellt__article__content__date {
+  padding-right: 10px;
+  color: #696969;
 }
 
 .aktuellt__article-two
@@ -577,6 +697,23 @@ p {
   font-size: 16px;
   padding: 0 10px 10px;
 }
+
+@media (max-width: 1080px) {
+  .boxes__content {
+    flex-direction: column;
+  }
+  .left-column {
+    padding-right: 0;
+  }
+  .aktuellt {
+    margin: 0 20px;
+  }
+  .aktuellt__title {
+    padding-top: 40px;
+  }
+}
+
+/************ /NOUMAN ************/
 
 /* Björn */
 
@@ -635,6 +772,110 @@ footer > section > article > ul {
 
 footer > section > article > ul > li {
   padding-top: 10px;
+}
+
+@media (min-width: 1080px) {
+  header {
+    padding: 14px 100px;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .main-menu {
+    position: relative;
+    top: 0px;
+    background-color: transparent;
+  }
+  .main-menu ul {
+    max-height: 70px;
+    text-align: right;
+  }
+  .main-menu ul li {
+    display: inline-flex;
+    padding: 0px;
+    margin: 0 5px;
+  }
+  .main-menu ul li:first-child {
+    margin-left: 0;
+  }
+  .main-menu ul li:last-child {
+    margin-right: 0;
+  }
+  .main-menu ul li a {
+    display: inline-block;
+    padding: 12px;
+    text-decoration: none;
+    width: auto;
+    background-color: transparent;
+    color: #034f7f;
+  }
+  .seperator {
+    color: black;
+  }
+  .search-header {
+    padding: 20px 100px;
+  }
+  .search-menu {
+    padding: 0px 100px 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .inner {
+    grid-template-columns: 70% auto;
+    height: auto;
+  }
+  .header-date {
+    grid-area: hd;
+  }
+  .date {
+    grid-area: sd;
+    font-size: 26px;
+    margin: 0 20px 0 0;
+    text-align: center;
+  }
+  .date-text {
+    grid-area: main;
+  }
+  .col1 {
+    grid-row: 1 / span 2;
+  }
+}
+@media (max-width: 768px) {
+  .inner {
+    grid-template-rows: 2fr 1fr 1fr;
+  }
+  .col1 {
+    grid-column: 1 / span 3;
+  }
+  .col2 {
+    grid-column: 1 / span 3;
+  }
+
+  .col3 {
+    grid-column: 1 / span 3;
+    min-height: 100px;
+  }
+  .inner-date {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd hd"
+      "sd main main main main main main main main";
+    gap: 20px 0px;
+  }
+  .header-date {
+    grid-area: hd;
+  }
+  .date {
+    grid-area: sd;
+    font-size: 26px;
+    margin: 0 20px 0 0;
+    text-align: center;
+  }
+  .date-text {
+    grid-area: main;
+  }
 }
 
 @media (max-width: 1020px) {
