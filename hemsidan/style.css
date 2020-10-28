@@ -195,6 +195,26 @@ header {
   }
 }
 
+@media (max-width: 554px) {
+  .search-menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-menu ul li:nth-child(1) {
+  margin-bottom: 10px;  
+  }
+
+  .search-menu ul li:last-child {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .search-menu ul li:nth-child(2) {
+    margin-left: 0;
+  }
+}
+
 /* ANNA */
 
 .wrapper {
@@ -227,6 +247,8 @@ header {
   padding: 20px;
 }
 .header-title {
+  font-size: 24px;
+  font-weight: normal;
   position: absolute;
   top: 0;
   margin: 30px;
@@ -332,6 +354,9 @@ header {
   }
   .date-text {
     grid-area: main;
+  }
+  .textblock {
+    width: 78%;
   }
 }
 
