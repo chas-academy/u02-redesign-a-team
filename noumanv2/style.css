@@ -29,174 +29,6 @@ a {
   cursor: pointer;
 }
 
-header {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 25px;
-  background-color: #f9dcd3;
-}
-.nav-wrap {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 35px;
-}
-.menu-icon {
-  font-size: 1.4em;
-  color: #ffffff;
-  line-height: 50px;
-  padding: 12px;
-  background-color: #1a3051;
-  cursor: pointer;
-  display: initial;
-}
-.main-menu {
-  position: absolute;
-  background-color: #1a3051;
-  top: 90px;
-  left: 0;
-  width: 100%;
-}
-.main-menu ul {
-  list-style-type: none;
-  max-height: 0px;
-  overflow: hidden;
-}
-.main-menu ul li {
-  padding: 0 15px;
-  margin: 0 0 5px 0;
-}
-.main-menu ul li:last-child {
-  margin-bottom: 0px;
-}
-
-.main-menu ul li a {
-  display: inline-block;
-  padding: 12px;
-  text-decoration: none;
-  width: 100%;
-  background-color: #364966;
-  color: #ffffff;
-}
-
-.seperator {
-  display: none;
-}
-
-#checkbox {
-  display: none;
-}
-#checkbox:checked ~ nav ul {
-  max-height: 250px;
-  padding: 15px 0;
-}
-
-/* Search Header with field */
-
-.search-header {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  padding: 14px 25px;
-  background-color: #1a3051;
-}
-.search-header fieldset {
-  width: 100%;
-  border-style: none;
-  align-items: stretch;
-}
-.search-field {
-  border-style: none;
-  padding: 15px 20px;
-  flex-grow: 1;
-}
-.search-btn {
-  padding: 15px 20px;
-  border-style: none;
-  cursor: pointer;
-  flex-shrink: 1;
-}
-
-/* Search Menu - three buttons */
-
-.search-menu {
-  background-color: #1a3051;
-  padding: 0px 25px 20px;
-}
-.search-menu ul {
-  display: flex;
-  list-style: none;
-}
-.search-menu ul li {
-  padding: 0px;
-  margin: 0 10px;
-  width: 100%;
-}
-.search-menu ul li:first-child {
-  margin-left: 0;
-}
-.search-menu ul li:last-child {
-  margin-right: 0;
-}
-.search-menu ul li a {
-  display: inline-block;
-  padding: 15px;
-  text-decoration: none;
-  width: auto;
-  background-color: #364966;
-  color: #fff;
-  width: 100%;
-}
-
-@media (min-width: 1080px) {
-  header {
-    padding: 14px 100px;
-  }
-  .menu-icon {
-    display: none;
-  }
-  .main-menu {
-    position: relative;
-    top: 0px;
-    background-color: transparent;
-  }
-  .main-menu ul {
-    max-height: 70px;
-    text-align: right;
-  }
-  .main-menu ul li {
-    display: inline-flex;
-    padding: 0px;
-    margin: 0 5px;
-  }
-  .main-menu ul li:first-child {
-    margin-left: 0;
-  }
-  .main-menu ul li:last-child {
-    margin-right: 0;
-  }
-  .main-menu ul li a {
-    display: inline-block;
-    padding: 12px;
-    text-decoration: none;
-    width: auto;
-    background-color: transparent;
-    color: #034f7f;
-  }
-  .seperator {
-    color: black;
-  }
-  .search-header {
-    padding: 20px 100px;
-  }
-  .search-menu {
-    padding: 0px 100px 20px;
-  }
-}
-/************ /SIMON ************/
-
 /************ ANNA ************/
 .wrapper {
   max-width: 100%;
@@ -212,7 +44,17 @@ header {
   color: #fff;
   min-height: 400px;
   overflow: hidden;
+  opacity: 0.8;
 }
+
+.col1:hover,
+.boxone:hover,
+.boxtwo:hover,
+.boxthree:hover,
+#container-parallax:hover {
+  opacity: 1;
+}
+
 .col2 {
   background: #b1dad1;
   position: relative;
@@ -226,6 +68,12 @@ header {
   color: #000;
   min-height: 150px;
   padding: 20px;
+}
+.verksamhetsomraden p {
+  padding-top: 20px;
+}
+.kalender-date {
+  font-size: 36px;
 }
 .header-title {
   position: absolute;
@@ -260,11 +108,14 @@ header {
 .kalender {
   position: relative;
 }
+.inner-date a,
 .verksamhetsomraden a {
   color: #000;
+  text-decoration: none;
 }
-.inner-date a {
-  color: #000;
+.inner-date a:hover,
+.verksamhetsomraden a:hover {
+  text-decoration: underline;
 }
 .inner {
   display: grid;
@@ -305,6 +156,7 @@ header {
   }
   .col1 {
     grid-column: 1 / span 3;
+    opacity: 1;
   }
   .col2 {
     grid-column: 1 / span 3;
@@ -354,6 +206,7 @@ header {
   margin: 10px;
   background-image: url(img/library.jpg);
   background-size: 100%, 100%;
+  opacity: 0.8;
 }
 
 .three-boxes article {
@@ -380,6 +233,11 @@ header {
     flex-flow: column wrap;
     align-content: center;
   }
+  .boxone,
+  .boxtwo,
+  .boxthree {
+    opacity: 1;
+  }
 }
 /************ /JOSHUA ************/
 
@@ -394,7 +252,7 @@ header {
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
 }
 
 #parallax-text {
@@ -412,9 +270,43 @@ header {
   font-size: 2.25em;
 }
 
+@media (max-width: 1080px) {
+  #container-parallax {
+    opacity: 1;
+  }
+}
+
 /************ /PERNILLA ************/
 
 /************ NOUMAN ************/
+#hvr-glow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+#hvr-glow:hover,
+#hvr-glow:focus,
+#hvr-glow:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.col1,
+.boxone,
+.boxtwo,
+.boxthree,
+#container-parallax {
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
 .boxes__content {
   display: flex;
   padding: 30px 0;
@@ -442,20 +334,20 @@ header {
   text-decoration: underline;
 }
 
-.left-column__kalender,
-.left-column__epale {
-  margin-top: 20px;
-}
-
-.left-column__verksamhet {
+.left-column__pressmeddelanden {
   background-color: #b1dad1;
   color: black;
   height: 150px;
   width: 100%;
 }
 
-.left-column__verksamhet__title,
-.left-column__kalender__title,
+.left-column__ledigajobb,
+.left-column__epale {
+  margin-top: 20px;
+}
+
+.left-column__pressmeddelanden__title,
+.left-column__ledigajobb__title,
 .left-column__epale__title {
   font-size: 18px;
   position: relative;
@@ -463,35 +355,24 @@ header {
   padding: 20px;
 }
 
-.left-column__kalender__heading__month,
-.aktuellt__article-one__title,
-.aktuellt__article-two__title,
-.aktuellt__article-three__title {
-  font-size: 16px;
-}
-
-.left-column__kalender {
+.left-column__ledigajobb {
   background-color: #f9dcd3;
   color: black;
   height: 150px;
   width: 100%;
 }
 
-.left-column__kalender__heading__date {
-  font-size: 36px;
-  padding: 0 20px;
-}
-
-.left-column__kalender__text__p {
+.left-column__ledigajobb__text {
   position: relative;
-  top: -55px;
-  width: 225px;
-  margin-left: 75px;
   color: #000;
 }
 
-p {
+#p {
   font-size: 14px;
+  padding: 0 20px;
+}
+
+.aktuellt p {
   padding: 0 10px;
 }
 
@@ -499,8 +380,7 @@ p {
   color: #ffffff;
 }
 
-.left-column__kalender__heading__month,
-.left-column__kalender__text__p,
+.left-column__ledigajobb__text,
 .left-column__epale__text,
 .aktuellt__article-one__content__text,
 .aktuellt__article-two__content__text,
@@ -516,9 +396,8 @@ p {
   width: 100%;
 }
 
-.left-column__verksamhet__text,
-.left-column__kalender__heading__month,
-.left-column__kalender__text__p,
+.left-column__pressmeddelanden__text,
+.left-column__ledigajobb__text,
 .left-column__epale__text {
   font-size: 14px;
   padding: 0 20px;
@@ -539,6 +418,12 @@ p {
 
 .aktuellt img {
   width: 180px;
+  filter: brightness(100%);
+  transition: filter 0.3s ease;
+}
+
+.aktuellt img:hover {
+  filter: brightness(50%);
 }
 
 .aktuellt a {
@@ -601,51 +486,3 @@ p {
 }
 
 /************ /NOUMAN ************/
-
-/************ BJÖRN ************/
-.about {
-  grid-area: about;
-}
-
-.links {
-  grid-area: links;
-}
-
-.areas {
-  grid-area: areas;
-}
-
-.news {
-  grid-area: news;
-}
-
-.contact {
-  grid-area: contact;
-}
-
-footer {
-  background-color: #1a3051;
-  max-width: 1290px;
-  margin: 0 auto;
-}
-
-footer > section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "about links contact"
-    "areas news contact";
-  width: 100%;
-}
-
-footer > section > article {
-  font-family: Roboto;
-  color: white;
-  padding: 20px;
-}
-
-footer > section > article > ul {
-  list-style: none;
-}
-/************ /BJÖRN ************/
