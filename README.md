@@ -90,17 +90,17 @@ October 29-30 - Finalise the project and validate the HTML and CSS code. No majo
 
 ## Credits (in no specific order)
 
-Anna Paajarvi
+Anna Pääjärvi
 
 Björn Lövdahl
 
 Joshua Nixon
 
-Pernilla Hallgren
+Pernilla Hällgren
 
 Simon Lindelöf
 
-Nouman
+Nouman Anjum
 
 Khaled Ibrahim
 
