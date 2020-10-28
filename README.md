@@ -102,6 +102,4 @@ Simon Lindelöf
 
 Nouman Anjum
 
-Khaled Ibrahim
-
 
