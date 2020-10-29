@@ -54,6 +54,7 @@ header {
   top: 90px;
   left: 0;
   width: 100%;
+  z-index: 999;
 }
 
 .main-menu ul {
