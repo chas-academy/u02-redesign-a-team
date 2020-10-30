@@ -4,7 +4,7 @@
 Our task is to redesign myh.se and include the following requirements.
 
 ## Final version of u02-redesign
-The final version of the assignment can be found in the directory "Hemsidan".
+The final version of the assignment can be found in the directory "www".
 
 ## Mål
 
