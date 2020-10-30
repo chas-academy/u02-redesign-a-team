@@ -93,7 +93,7 @@ header {
   display: none;
 }
 
-#checkbox:checked~nav ul {
+#checkbox:checked ~ nav ul {
   max-height: 250px;
   padding: 15px 0;
 }
@@ -249,7 +249,10 @@ header {
   opacity: 0.8;
 }
 
-.col1:hover, .boxone:hover, .boxtwo:hover, .boxthree:hover {
+.col1:hover,
+.boxone:hover,
+.boxtwo:hover,
+.boxthree:hover {
   opacity: 1;
 }
 
@@ -268,7 +271,9 @@ header {
   transition-property: box-shadow;
 }
 
-.col2:hover, .col2:focus, .col2:active {
+.col2:hover,
+.col2:focus,
+.col2:active {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
@@ -287,7 +292,9 @@ header {
   transition-property: box-shadow;
 }
 
-.col3:hover, .col:focus, .col2:active {
+.col3:hover,
+.col3:focus,
+.col2:active {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
@@ -342,12 +349,14 @@ header {
   position: relative;
 }
 
-.datin a, .verksamhetsomraden a {
+.datin a,
+.verksamhetsomraden a {
   color: #000;
   text-decoration: none;
 }
 
-.datin a:hover, .verksamhetsomraden a:hover {
+.datin a:hover,
+.verksamhetsomraden a:hover {
   text-decoration: underline;
 }
 
@@ -473,7 +482,9 @@ header {
   transition: filter 0.3s ease;
 }
 
-.box-article-first:hover, .box-article-middle:hover, .box-article-last:hover {
+.box-article-first:hover,
+.box-article-middle:hover,
+.box-article-last:hover {
   filter: brightness(100%);
 }
 
@@ -585,11 +596,17 @@ header {
   transition-property: box-shadow;
 }
 
-.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+.hvr-glow:hover,
+.hvr-glow:focus,
+.hvr-glow:active {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
-.col1, .boxone, .boxtwo, .boxthree, #container-parallax {
+.col1,
+.boxone,
+.boxtwo,
+.boxthree,
+#container-parallax {
   transition: all 300ms;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
@@ -631,11 +648,14 @@ header {
   width: 100%;
 }
 
-.left-column__ledigajobb, .left-column__epale {
+.left-column__ledigajobb,
+.left-column__epale {
   margin-top: 20px;
 }
 
-.left-column__pressmeddelanden__title, .left-column__ledigajobb__title, .left-column__epale__title {
+.left-column__pressmeddelanden__title,
+.left-column__ledigajobb__title,
+.left-column__epale__title {
   font-size: 18px;
   position: relative;
   font-weight: 500;
@@ -662,7 +682,11 @@ header {
   color: #ffffff;
 }
 
-.left-column__ledigajobb__text, .left-column__epale__text, .aktuellt__article-one__content__text, .aktuellt__article-two__content__text, .aktuellt__article-three__content__text {
+.left-column__ledigajobb__text,
+.left-column__epale__text,
+.aktuellt__article-one__content__text,
+.aktuellt__article-two__content__text,
+.aktuellt__article-three__content__text {
   font-size: 14px;
   padding: 0px 10px;
 }
@@ -674,7 +698,9 @@ header {
   width: 100%;
 }
 
-.left-column__pressmeddelanden__text, .left-column__ledigajobb__text, .left-column__epale__text {
+.left-column__pressmeddelanden__text,
+.left-column__ledigajobb__text,
+.left-column__epale__text {
   font-size: 14px;
   padding: 0 20px;
 }
@@ -706,7 +732,9 @@ header {
   text-decoration: underline;
 }
 
-.aktuellt__article-one, .aktuellt__article-two, .aktuellt__article-three {
+.aktuellt__article-one,
+.aktuellt__article-two,
+.aktuellt__article-three {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
@@ -717,17 +745,23 @@ header {
   color: #696969;
 }
 
-.aktuellt__article-two .aktuellt__article-two__title .aktuellt__article-two__content {
+.aktuellt__article-two
+  .aktuellt__article-two__title
+  .aktuellt__article-two__content {
   display: flex;
   flex-direction: column;
 }
 
-.aktuellt__article-one__img, .aktuellt__article-two__img, .aktuellt__article-three__img {
+.aktuellt__article-one__img,
+.aktuellt__article-two__img,
+.aktuellt__article-three__img {
   width: 180px;
   height: 114px;
 }
 
-.aktuellt__article-one__title, .aktuellt__article-two__title, .aktuellt__article-three__title {
+.aktuellt__article-one__title,
+.aktuellt__article-two__title,
+.aktuellt__article-three__title {
   font-size: 16px;
   padding: 0 10px 10px;
 }
@@ -777,7 +811,7 @@ footer {
   margin-top: 25px;
 }
 
-footer>section {
+footer > section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -786,22 +820,22 @@ footer>section {
   width: 100%;
 }
 
-footer>section>article {
+footer > section > article {
   font-family: Roboto;
   color: white;
   padding: 20px;
 }
 
-footer>section>article>h2 {
+footer > section > article > h2 {
   font-size: 18px;
 }
 
-footer>section>article>ul {
+footer > section > article > ul {
   list-style: none;
   padding-top: 10px;
 }
 
-footer>section>article>ul>li {
+footer > section > article > ul > li {
   padding-top: 10px;
 }
 
@@ -877,7 +911,7 @@ footer>section>article>ul>li {
   .wrapper {
     padding: 10px 10px 5px 10px;
   }
-  footer>section {
+  footer > section {
     padding: 0px;
   }
   .max-width__boxes {
@@ -935,7 +969,7 @@ footer>section>article>ul>li {
 }
 
 @media (max-width: 1020px) {
-  footer>section {
+  footer > section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -945,7 +979,7 @@ footer>section>article>ul>li {
 }
 
 @media (max-width: 700px) {
-  footer>section {
+  footer > section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
