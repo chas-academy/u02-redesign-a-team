@@ -175,7 +175,6 @@ header {
   }
   .main-menu ul li:last-child {
     margin-right: 0;
-
   }
   .main-menu ul li a {
     display: inline-block;
@@ -194,7 +193,7 @@ header {
   .search-menu {
     padding: 0px 100px 20px;
   }
-} 
+}
 
 @media (max-width: 554px) {
   .search-menu ul {
@@ -203,7 +202,7 @@ header {
   }
 
   .search-menu ul li:nth-child(1) {
-  margin-bottom: 10px;  
+    margin-bottom: 10px;
   }
 
   .search-menu ul li:last-child {
@@ -285,7 +284,7 @@ iframe {
   margin-right: auto;
 }
 
-/* KONTAKTFORMULÄR */ 
+/* KONTAKTFORMULÄR */
 #formular {
   width: 100%;
   background-color: #f9dcd3;
@@ -294,28 +293,28 @@ iframe {
   font-size: 16px;
 }
 
-#formular input[type=text],
-#formular input[type=email] {
-width: 100%;
-padding: 10px 10px 10px 10px;
-margin: 5px 0 15px 0;
-display: inline-block;
-border: none;
-font-size: 16px;
+#formular input[type="text"],
+#formular input[type="email"] {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: none;
+  font-size: 16px;
 }
 
-#formular input[type=submit] {
-background-color: #364966;
-color: white;
-padding: 15px 20px;
-margin: 10px 0;
-border: none;
-cursor: pointer;
-font-size: 18px;
+#formular input[type="submit"] {
+  background-color: #364966;
+  color: white;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
 }
 
-#formular input[type=submit]:hover {
-background-color: #1A3051;
+#formular input[type="submit"]:hover {
+  background-color: #1a3051;
 }
 
 /* Rubriker Landningssidorna */
@@ -328,7 +327,6 @@ background-color: #1A3051;
     margin-top: 10px;
   }
 }
-
 
 /* Video */
 @media (max-width: 700px) {
@@ -346,7 +344,6 @@ background-color: #1A3051;
 }
 
 /* LANDNINGSSIDOR END */
-
 
 /* Björn */
 
@@ -375,6 +372,15 @@ footer {
   max-width: 1290px;
   margin: 0 auto;
   width: 100%;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 footer > section {
