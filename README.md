@@ -58,10 +58,11 @@ Always create a new branch!
 
 1. Create branch (~ % git checkout -b examplebranch)
 2. Check status (~ % git status) files not committed will be red
-3. Add files to be committed (~ % git add <file name> or . <for all none tracked files>
-4. Repeat step 2 to check that the files you want to commit are green
-5. Push files (~ % git push origin <branch-name>
-6. Open a pull request.
+3. Add files to be committed (~ % git add (.filename) or . (for all none tracked files)
+4. Commit added files (~ % git commit -m "this commit will..")
+5. Repeat step 2 to check that the files you want to commit are green
+6. Push files (~ % git push origin examplebranch
+7. Create a pull request.
 
 ## Roadmap - 2020
 
